@@ -148,10 +148,22 @@
       ::-webkit-scrollbar-thumb:hover {
         background: #4b5563;
       }
+      
     </style>
   </head>
 
   <body class="bg-background text-foreground">
+    <div class="relative overflow-hidden
+    before:absolute before:inset-0 before:z-0
+    before:bg-[linear-gradient(rgba(255,255,255,0.16)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.16)_1px,transparent_1px)]
+    before:bg-[length:110px_110px]
+    before:opacity-90
+    before:pointer-events-none
+    after:absolute after:inset-0 after:z-0
+    after:bg-[radial-gradient(ellipse_at_center,rgba(18,42,80,0.35)_0%,rgba(11,19,36,0.6)_55%,rgba(11,19,36,0.85)_100%)]
+    after:pointer-events-none">
+
+    
     <!-- NAVIGATION -->
     <nav
       class="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border"
@@ -205,18 +217,18 @@
 
     <main class="pt-24 md:pt-28 lg:pt-32">
       <!-- HERO -->
-      <section class="bg-background md:pb-12 px-6 lg:px-12 pt-0 pb-0">
-        <div class="w-full">
+      <section class="relative bg-transparent md:pb-12 px-6 lg:px-12 pt-0 pb-0">
+        <div class="w-full relative z-10">
           <div
-            class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12"
+            class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start lg:items-center mb-12"
           >
-            <div class="space-y-4 ml-24">
+            <div class="space-y-4 ml-0 lg:ml-24 text-left">
               <h1
                 class="md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground text-[35px]"
               >
                 We generate high quality leads that convert into paying clients
               </h1>
-              <div class="flex flex-wrap gap-4 pt-4">
+              <div class="flex flex-wrap gap-4 pt-4 justify-start">
                 <button
   class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium shadow hover:bg-primary/90 transition-all"
   data-scroll-to="#contact"
@@ -262,7 +274,7 @@
               </div>
             </div>
           </div>
-<hr class="border-border my-16" />
+
 
 
 <h2 class="text-4xl italic font-semibold tracking-tight text-white text-center mb-10">
@@ -291,7 +303,7 @@
         "Best ROI we've ever seen"
       </p>
     </div>
-<hr class="border-border my-16" />
+
   </div>
 </div>
 
@@ -323,6 +335,7 @@
           </div>
         </div>
       </section>
+      </div>
 
       <!-- SERVICES -->
       <section
@@ -475,7 +488,7 @@
             <div
               class="text-2xl font-semibold text-muted-foreground/40 hover:text-foreground transition-all duration-300 cursor-pointer grayscale hover:grayscale-0"
             >
-              Erick CarWash
+              Elevate Ads
             </div>
             <div
               class="text-2xl font-semibold text-muted-foreground/40 hover:text-foreground transition-all duration-300 cursor-pointer grayscale hover:grayscale-0"
@@ -717,7 +730,8 @@
               <button
                 type="submit"
                 id="send-message-btn"
-                class="bg-primary text-primary-foreground w-full py-3"
+                class="bg-primary text-primary-foreground w-full py-3 rounded-xl"
+
               >
                 Send Message
               </button>
@@ -1131,4 +1145,6 @@
     </script>
   </body>
 </html>
+
+
 
