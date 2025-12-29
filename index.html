@@ -631,7 +631,17 @@
                   required
                 />
               </div>
-
+<div class="space-y-2">
+  <label for="phone" class="text-sm font-medium">Phone Number</label>
+  <input
+    id="phone"
+    name="phone"
+    type="tel"
+    class="w-full rounded-md border border-border bg-background px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+    placeholder="+1 (555) 123-4567"
+    required
+  />
+</div>
               <div class="space-y-2">
                 <label
                   for="business"
@@ -671,8 +681,11 @@
                 Send Message
               </button>
               <p class="mt-3 text-xs text-center text-muted-foreground">
-  By contacting us, you agree to receive appointment-related calls or text messages from Elevate Ads.
-  Message frequency varies. Message and data rates may apply. Reply <strong>STOP</strong> to cancel. For help, reply <strong>HELP</strong>.
+  By providing your phone number, you agree to receive informational text messages and calls from Elevate Ads.
+  Consent is not a condition of purchase.
+  Message frequency varies. Message and data rates may apply.
+  Reply <strong>STOP</strong> to cancel or <strong>HELP</strong> for help.
+  Elevate Ads will not share your contact phone number with any other parties.
   <a href="./privacy.html" target="_blank" rel="noopener noreferrer" class="underline">
     Privacy Policy
   </a>
@@ -1068,6 +1081,7 @@ if (contactForm && sendBtn) {
 </footer>
   </body>
 </html>
+
 
 
 
