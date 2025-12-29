@@ -224,10 +224,13 @@
           >
             <div class="space-y-4 ml-0 lg:ml-24 text-left">
               <h1
-                class="md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground text-[35px]"
+                class="text-[44px] md:text-6xl lg:text-7xl font-bold tracking-tight text-foreground leading-tight"
               >
-                We generate high quality leads that convert into paying clients
+                Get more customers! Not just phone calls.
               </h1>
+              <p class="text-lg md:text-xl text-muted-foreground max-w-xl">
+  Built to bring real customers to local service businesses.
+</p>
               <div class="flex flex-wrap gap-4 pt-4 justify-start">
                 <button
   class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-lg font-medium shadow hover:bg-primary/90 transition-all"
@@ -428,77 +431,6 @@
         </div>
       </section>
 
-      <!-- BRANDS -->
-      <section
-        class="py-20 px-6 bg-background"
-      >
-        <div class="max-w-7xl mx-auto">
-          <div class="text-center mb-12">
-            <h2
-              class="text-3xl md:text-4xl font-bold text-foreground"
-            >
-              Trusted by Leading Brands
-            </h2>
-          </div>
-
-          <div
-            class="grid grid-cols-3 md:grid-cols-5 gap-12 items-center justify-items-center"
-          >
-            <!-- Simple text logos -->
-            <div
-              class="text-2xl font-semibold text-muted-foreground/40 hover:text-foreground transition-all duration-300 cursor-pointer grayscale hover:grayscale-0"
-            >
-              TechCorp
-            </div>
-            <div
-              class="text-2xl font-semibold text-muted-foreground/40 hover:text-foreground transition-all duration-300 cursor-pointer grayscale hover:grayscale-0"
-            >
-              InnovateLabs
-            </div>
-            <div
-              class="text-2xl font-semibold text-muted-foreground/40 hover:text-foreground transition-all duration-300 cursor-pointer grayscale hover:grayscale-0"
-            >
-              GrowthCo
-            </div>
-            <div
-              class="text-2xl font-semibold text-muted-foreground/40 hover:text-foreground transition-all duration-300 cursor-pointer grayscale hover:grayscale-0"
-            >
-              NextGen
-            </div>
-            <div
-              class="text-2xl font-semibold text-muted-foreground/40 hover:text-foreground transition-all duration-300 cursor-pointer grayscale hover:grayscale-0"
-            >
-              CloudScale
-            </div>
-            <div
-              class="text-2xl font-semibold text-muted-foreground/40 hover:text-foreground transition-all duration-300 cursor-pointer grayscale hover:grayscale-0"
-            >
-              DataForce
-            </div>
-            <div
-              class="text-2xl font-semibold text-muted-foreground/40 hover:text-foreground transition-all duration-300 cursor-pointer grayscale hover:grayscale-0"
-            >
-              MarketPro
-            </div>
-            <div
-              class="text-2xl font-semibold text-muted-foreground/40 hover:text-foreground transition-all duration-300 cursor-pointer grayscale hover:grayscale-0"
-            >
-              VisionAI
-            </div>
-            <div
-              class="text-2xl font-semibold text-muted-foreground/40 hover:text-foreground transition-all duration-300 cursor-pointer grayscale hover:grayscale-0"
-            >
-              Elevate Ads
-            </div>
-            <div
-              class="text-2xl font-semibold text-muted-foreground/40 hover:text-foreground transition-all duration-300 cursor-pointer grayscale hover:grayscale-0"
-            >
-              Zenith
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- RESULTS -->
       <section
         class="py-24 px-6 bg-[#111111]"
@@ -663,8 +595,11 @@
           >
             <!-- Form -->
             <form
-              id="contact-form"
-              <form action="https://formsubmit.co/louis@elevateadsllc.com" method="POST" class="space-y-4">
+  id="contact-form"
+  action="https://formsubmit.co/louis@elevateadsllc.com"
+  method="POST"
+  class="space-y-4"
+>
 
               <div class="space-y-2">
                 <label
@@ -1116,46 +1051,23 @@
         );
       }
 
-      // Contact form (fake submit)
-      const contactForm =
-        document.getElementById(
-          "contact-form"
-        );
-      const sendBtn =
-        document.getElementById(
-          "send-message-btn"
-        );
-      const statusText =
-        document.getElementById(
-          "form-status"
-        );
+      const contactForm = document.getElementById("contact-form");
+const sendBtn = document.getElementById("send-message-btn");
 
-      if (contactForm && sendBtn && statusText) {
-        contactForm.addEventListener(
-          "submit",
-          (e) => {
-            e.preventDefault();
-            sendBtn.disabled = true;
-            sendBtn.textContent = "Sending...";
-            setTimeout(() => {
-              sendBtn.disabled = false;
-              sendBtn.textContent =
-                "Send Message";
-              statusText.classList.remove(
-                "hidden"
-              );
-            }, 1000);
-          }
-        );
-      }
+if (contactForm && sendBtn) {
+  contactForm.addEventListener("submit", () => {
+    sendBtn.disabled = true;
+    sendBtn.textContent = "Sending...";
+    // ❗ NO preventDefault
+  });
+}
+
     </script>
     <footer style="padding:24px 16px; text-align:center; opacity:.85;">
   <a href="./privacy.html">Privacy Policy & Terms</a>
 </footer>
   </body>
 </html>
-
-
 
 
 
