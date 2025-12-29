@@ -671,6 +671,32 @@
                   required
                 ></textarea>
               </div>
+<!-- SMS / Call Consent Checkboxes -->
+<div class="space-y-3 text-sm text-muted-foreground">
+  <label class="flex items-start gap-2">
+    <input
+      type="checkbox"
+      name="consent_marketing"
+      required
+      class="mt-1"
+    />
+    <span>
+      I agree to receive informational and marketing-related messages from Elevate Ads.
+    </span>
+  </label>
+
+  <label class="flex items-start gap-2">
+    <input
+      type="checkbox"
+      name="consent_appointment"
+      required
+      class="mt-1"
+    />
+    <span>
+      I consent to receiving appointment-related calls or text messages.
+    </span>
+  </label>
+</div>
 
               <button
                 type="submit"
@@ -1081,6 +1107,7 @@ if (contactForm && sendBtn) {
 </footer>
   </body>
 </html>
+
 
 
 
